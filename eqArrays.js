@@ -29,4 +29,4 @@ const eqArrays = function(array1, array2) {
   //test
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
   
-module.exports = eqArrays;
+
