@@ -1,4 +1,12 @@
-//copied eqArrays function
+//copied assertEqual function
+const assertEqual = function(actual, expected) {
+    if (actual !== expected) {
+      console.log(`Assertion Failed: ${actual} !== ${expected}`);
+    } else {
+      console.log(`Assertion Passed: ${actual} === ${expected}`);
+    }
+  };
+//eqArrays function
 const eqArrays = function(array1, array2) {
     let correct = true;
   
@@ -16,21 +24,9 @@ const eqArrays = function(array1, array2) {
   
     return correct;
   
-}
-const assertArraysEqual = function(arr1, arr2) {
-
-    if (eqArrays(arr1, arr2)) {  //if the true (two arrays are equal)
-      console.log(`Arrays are equal!`)
-    } else {
-      console.log(`Arrays are NOT equal!`)
-    }
-  
-}
-  
+};
   
   //test cases
-//assertArraysEqual(["hey", "hi", "hello"], ["hey", "hi", "hello"]);
-assertArraysEqual(["hey", "hi", "bye"], ["hey", "hi", "hello"]);
-
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); 
   
-module.exports = assertArraysEqual;
+module.exports = eqArrays;
