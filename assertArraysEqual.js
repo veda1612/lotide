@@ -20,9 +20,9 @@ const eqArrays = function(array1, array2) {
 const assertArraysEqual = function(arr1, arr2) {
 
     if (eqArrays(arr1, arr2)) {  //if the true (two arrays are equal)
-      console.log(`😜😍🍆Arrays are equal!`)
+      console.log(`Arrays are equal!`)
     } else {
-      console.log(`😡🤮🤢Arrays are NOT equal!`)
+      console.log(`Arrays are NOT equal!`)
     }
   
   }
@@ -33,4 +33,4 @@ const assertArraysEqual = function(arr1, arr2) {
 assertArraysEqual(["hey", "hi", "bye"], ["hey", "hi", "hello"]);
 
   
-module.exports = assertArraysEqual;
+
