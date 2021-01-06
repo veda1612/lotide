@@ -33,4 +33,4 @@ const assertArraysEqual = function(arr1, arr2) {
 assertArraysEqual(["hey", "hi", "bye"], ["hey", "hi", "hello"]);
 
   
-module.exports = assertArraysEqual;
+
