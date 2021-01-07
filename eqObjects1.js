@@ -13,18 +13,15 @@ const eqObjects = function(object1, object2) {
     } 
   
 //if the two objects are the same length this runs:
-else for (let item of array1) {
-  if (Array.isArray(object1[item]) && Array.isArray(object2[item]))  {
-    result = eqArrays(object1[item], object2[item]);    
-  } else if (typeof(object1[item]) === "object" || typeof(object2[item]) === "object") {
-    result = eqObjects(object1[item], object2[item]);
-  } else if  (object1[item] !== object2[item]) {
-    result = false;   
-    
+else for (let key in object1) {
+    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
+    result = result && (eqArrays(object1[key], object2[key]));
+    } else if (typeof(object1[key]) === "object" || typeof(object2[key]) === "object") {
+      result = result && eqObjects(object1[key], object2[key]);
+    } else if (object1[key] !== object2[key]) result = result && false;
   }
-}
-  
   return result;
+
 };
 
 //test cases
