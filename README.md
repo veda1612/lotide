@@ -11,11 +11,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @username/lotide`
+`npm install @veda1612/lotide`
 
 **Require it:**
 
-`const _ = require('@username/lotide');`
+`const _ = require('@veda1612/lotide');`
 
 **Call it:**
 
@@ -25,6 +25,9 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
+* `head(...)`: description
+* `tail(...)`: description
+* `middle(...)`: description
+* `assertEqual(...)`: description
+* `eqArrays(...)`: description
+* `assertArraysEqual(...)`: description
