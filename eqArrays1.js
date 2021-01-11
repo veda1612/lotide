@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
     }
 };
 //eqArrays function
-const eqArrays = function(array1, array2) {
+const eqArrays1 = function(array1, array2) {
     let correct = true;
   
 //if the two arrays are not the same length the assertion fails automatically
@@ -27,6 +27,6 @@ const eqArrays = function(array1, array2) {
 };
   
   //test cases
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); 
+assertEqual(eqArrays1([1, 2, 3], [1, 2, 3]), true); 
   
-module.exports = eqArrays;
+module.exports = eqArrays1;
